@@ -122,7 +122,6 @@ h4:hover {
     animation: none;
 }
 
-
 h3 {
     color: #fff;
     position: absolute;
@@ -159,18 +158,18 @@ p.score-para {
     color: #fff;
     position: absolute;
     top: -1%;
-    left: 65%;
+    left: 55%;
     font-family: Bangers;
     -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
     -moz-animation: neon1 1.5s ease-in-out infinite alternate;
     animation: neon1 1.5s ease-in-out infinite alternate;
 }
 
-p.level-para{
+p.level-para {
     color: #fff;
-    position:absolute;
-    top : -1%;
-    left : 80%;
+    position: absolute;
+    top: -1%;
+    left: 80%;
     font-family: Bangers;
     -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
     -moz-animation: neon1 1.5s ease-in-out infinite alternate;

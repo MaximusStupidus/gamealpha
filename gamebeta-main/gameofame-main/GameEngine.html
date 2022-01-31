@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Audiowide|Iceland|Monoton|Pacifico|Press+Start+2P|Vampiro+One' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="./style.css" l="stylesheet" href="./style.css">
     <link rel="stylesheet" href="src/stylehints.css">
-    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>  
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
 
     <style>
         #imagine {
@@ -18,10 +19,11 @@
             border: 1px;
             border-style: groove;
             border-radius: 25px;
+            position: absolute;
             box-sizing: border-box;
             padding: auto;
-            top: 50px;
-            left: 50px;
+            top: 25%;
+            left: 10%;
             z-index: 2;
         }
         
@@ -31,7 +33,7 @@
         
         img {
             position: absolute;
-            top: 200px;
+            top: 30%;
             left: 35%;
         }
         
@@ -42,32 +44,32 @@
             width: 350px;
             height: 350px;
         }
-         
+        
         #layering {
             position: absolute;
-            top: 200px;
+            top: 30%;
             left: 35%;
             width: 405px;
             height: 405px;
         }
-     
+        
         .imgB1 {
             z-index: 4;
         }
     </style>
-    
+
 </head>
 
 <body>
 
-    <layer id="imagine" above top="300" left="1200" width="600" height="480">
-        <canvas id="layering" top="200" left="800" width="405" height="405" style="z-index: 15;">
+    <layer id="imagine" above top="20%" left="20%" width="600" height="480">
+        <canvas id="layering" top="20%" left="20%" width="405" height="405" style="z-index: 15;">
         </canvas>
         <img class="imgB1" id="try" src=game_fame_personalities/bill_gates.jpg width="405" height="405">
     </layer>
-    <layer id="level stuff" top="300" left="0" width="1200" height="600" style="z-index: 2;">
+    <layer id="level stuff" top="300" left="0" width="450%" height="250%" style="z-index: 2;">
         <br>
-        <canvas id="levelScreen" height="550" width="1200">
+        <canvas id="levelScreen" height="480%" width="1100%">
         </canvas>
     </layer>
 
