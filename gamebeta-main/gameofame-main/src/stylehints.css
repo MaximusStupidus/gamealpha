@@ -1,0 +1,23 @@
+body {
+    padding: 10px;
+}
+
+button {
+    position: absolute;
+    background-color: #4CAF50;
+    border: none;
+    color: black;
+    padding: 20px 32px;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    z-index: 4;
+    left: 20px;
+    top: 20px;
+    font-family: Bangers;
+}
+
+
+button:hover {
+    background: rgb(245, 232, 232);
+}
