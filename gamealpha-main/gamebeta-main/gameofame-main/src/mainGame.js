@@ -31,6 +31,7 @@ let answer = [
     "Indra Nooyi", "Kalpana Chawla",
     "Mirabai Chanu", "Dwayne Johnson"
 ]
+
 function scoreKeeper() {
     var scoreKeeping = document.createElement("button");
     scoreKeeping.innerHTML = score;
@@ -38,19 +39,20 @@ function scoreKeeper() {
     scoreKeeping.style.backgroundColor = "red";
     scoreKeeping.style.top = "230px";
     scoreKeeping.style.borderRadius = "25px";
-    
+
     var body = document.getElementsByTagName("body")[0];
     body.appendChild(scoreKeeping);
 
     scoreKeeping.addEventListener("click", function() {
         alert(hints[level - 1][0]);
         hintTaken = 1;
-        layerIt(hintTaken);})
+        layerIt(hintTaken);
+    })
 }
 
 function levelChanger() {
-    var levelChange = document.getElementById("levelIt") 
-    levelChange/appendChild(level);
+    var levelChange = document.getElementById("levelIt")
+    levelChange / appendChild(level);
 }
 
 function hintProducer() {
@@ -110,8 +112,8 @@ function hintProducer() {
 function answers() {
     var ans1 = window.prompt("Enter your answer - ");
 
-    if (ans1 == answer[level - 1]) {
-        level++;        
+    if (ans1.toLowerCase() == answer[level - 1].toLowerCase()) {
+        level++;
         imageDeveloper(level);
         layerIt(0);
         if (hintTaken == 1) { score += 50; }
@@ -120,9 +122,9 @@ function answers() {
         alert("Correct Answer");
         hintTaken = 0;
         const elementScore = document.getElementById("scoreIt");
-        elementScore.innerHTML = "Score:"+ score;
+        elementScore.innerHTML = "Score:" + score;
         const elementLevel = document.getElementById("levelIt");
-        elementLevel.innerHTML = "Level:"+ level;
+        elementLevel.innerHTML = "Level:" + level;
 
         return 1;
     } else {
